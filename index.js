@@ -1,0 +1,59 @@
+function nextbutton() {
+    let data = document.getElementById("data").innerText;
+    switch (true) {
+        case data == "Page0":
+            document.location.href = "./tutorial1.html";
+            break;
+        case data == "Page1":
+            document.location.href = "./tutorial2.html";
+            break;
+        case data == "Page2":
+            document.location.href = "./tutorial3.html";
+            break;
+        case data == "Page3":
+            document.location.href = "./tutorial4.html";
+            break;
+        case data == "Page4":
+            document.location.href = "./tutorial5.html";
+            break;
+        default:
+            break;
+    }
+};
+
+function previousbutton() {
+    let data = document.getElementById("data").innerText;
+    switch (true) {
+        case data == "Page1":
+            document.location.href = "./portal.html";
+            break;
+        case data == "Page2":
+            document.location.href = './tutorial1.html';
+            break;
+        case data == "Page3":
+            document.location.href = './tutorial2.html';
+            break;
+        case data == "Page4":
+            document.location.href = './tutorial3.html';
+            break;
+        case data == "Page5":
+            document.location.href = './tutorial4.html';
+            break;
+        default:
+            break;
+    }
+}
+
+// function downloadcontentbutton() {
+//     let data = document.getElementById("data").innerText;
+//     switch (true) {
+//         case data == "Page1":
+//             document.location.href = "./data/tutorial1.zip";
+//             break;
+//         case data == "Page2":
+//             document.location.href = "./data/tutorial2.zip";
+//             break;
+//         default:
+//             break;
+//     }
+// }

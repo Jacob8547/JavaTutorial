@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thunderchickens Java Tutorial</title>
-    <link rel="stylesheet" href="./main.css">
-    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./data/main.css">
     <script>
         function tweedle() {
-            document.body.innerHTML = `<h1 class="center title">Do not be a Tweedledum</h1>`;
+            document.body.innerHTML = `<h1 class="center title">Do not be a Tweedledum</h1><div style="margin: 7.5%"><img src="./data/tweedledum.png"></div>`;
         }
     </script>
 </head>
@@ -18,6 +17,7 @@
     <div style="display: none;" id="data">Page0</div>
     <div class="center title">
         <h1>Java Tutorial | Home</h1>
+        <!-- <img style="max-width: fit-content;" -->
     </div>
     <hr>
     <div class="accent body">
@@ -66,15 +66,9 @@
     </div>
     <br>
     <br>
-    <div class="body accent center">
-        <h4>
-            <a href="./tutorial1.html">Tutorial 1</a> |
-            <a href="./tutorial2.html">Tutorial 2</a> |
-            <a href="./tutorial3.html">Tutorial 3</a> |
-            <a href="./tutorial4.html">Tutorial 4</a> |
-            <a href="./tutorial5.html">Tutorial 5</a>
-        </h4>
-    </div>
+    <div class="body accent center" id="footer"></div>
 </body>
+
+<script src="./data/index.js"></script>
 
 </html>

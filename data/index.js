@@ -1,3 +1,17 @@
+function loadFooter() {
+    let footer = document.getElementById("footer");
+    footer.innerHTML = `
+        <h4>
+            <a href="./portal.html">Portal</a> |
+            <a href="./tutorial1.html">Tutorial 1</a> |
+            <a href="./tutorial2.html">Tutorial 2</a> |
+            <a href="./tutorial3.html">Tutorial 3</a> |
+            <a href="./tutorial4.html">Tutorial 4</a> |
+            <a href="./tutorial5.html">Tutorial 5</a>
+        </h4>
+            `;
+}
+
 function nextbutton() {
     let data = document.getElementById("data").innerText;
     switch (true) {
@@ -44,16 +58,15 @@ function previousbutton() {
     }
 }
 
-// function downloadcontentbutton() {
-//     let data = document.getElementById("data").innerText;
-//     switch (true) {
-//         case data == "Page1":
-//             document.location.href = "./data/tutorial1.zip";
-//             break;
-//         case data == "Page2":
-//             document.location.href = "./data/tutorial2.zip";
-//             break;
-//         default:
-//             break;
-//     }
-// }
+function downloadcontentbutton() {
+    let data = document.getElementById("data").innerText;
+    switch (true) {
+        case data == "Page3":
+            document.location.href = "./data/exampleSubsystems.zip";
+            break;
+        default:
+            break;
+    }
+}
+
+loadFooter();

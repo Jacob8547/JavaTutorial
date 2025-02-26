@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thunderchickens Java Tutorial</title>
-    <link rel="stylesheet" href="./main.css">
-    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./data/main.css">
 </head>
 
 <body>
@@ -26,6 +25,7 @@
             This tutorial will answer these questions:
             <ol>
                 <li>What are data types?</li>
+                <li>How do I create variables?</li>
                 <li>What are classes?</li>
                 <li>What are objects?</li>
                 <li>What are loops?</li>
@@ -69,10 +69,29 @@
     <br>
     <div class="title center">
         <h1>
-            What are classes?
+            How do I create variables?
         </h1>
     </div>
     <div class="body">
+        <h3>
+            Ah, sweet old Java. It's never simple... Anyway, there are a few "parameters" you can declare before you
+            create your variable.
+            <ul>
+                <li>public - Allows you to access the variable from any file (Learn more about this below)</li>
+                <li>private - A variable contained in one file alone</li>
+                <li>static - So that you don't need to instantiate the class to use the variable</li>
+                <li>final - Once the variable is declared, it cannot be changed</li>
+            </ul>
+        </h3>
+    </div>
+    <br>
+    <br>
+    <div class="title center">
+        <h1>
+            What are classes?
+        </h1>
+    </div>
+    <div class="body accent">
         <h3>
             Imagine your room. Now, take everything out of your room so that it is empty. This is what a class is. In a
             class, you can create functions, variables, loops, really anything. You can have mutliple classes working
@@ -81,9 +100,10 @@
             <br>
             <div class="codebox">
                 public class Robot {<br>
-                &emsp;double numberOfNuggets = 10.51;<br>
-                &emsp;boolean matchesNumberOnBox = False;<br>
-                &emsp;string messageToEmployee = "Get it together";<br>
+                &emsp;public double numberOfNuggets = 10.51;<br>
+                &emsp;private boolean matchesNumberOnBox = False; <comment>// Notice this is private</comment>
+                <br>
+                &emsp;public string messageToEmployee = "Get it together";<br>
                 }
             </div>
         </h3>
@@ -95,7 +115,7 @@
             What are objects?
         </h1>
     </div>
-    <div class="body accent">
+    <div class="body">
         <h3>
             An object is an instance of a class. You can't just magically use everything in a class in other classes.
             You must first create an object! Once you create the object, anything in the class is now accessible
@@ -105,6 +125,7 @@
             <div class="codebox">
                 Robot robotObject = new Robot();<br>
                 robotObject.numberOfNuggets; <comment>// 10.51</comment><br>
+                robotObject.matchesNumberOnBox; <comment>// Error: Does not exist</comment><br>
                 robotObject.messageToEmployee; <comment>// "Get it together"</comment>
             </div>
         </h3>
@@ -116,7 +137,7 @@
             What are loops?
         </h1>
     </div>
-    <div class="body">
+    <div class="body accent">
         <h3>
             The easiest way to understand what a loop is - do something over and over again until someone says to stop.
             That is what a loop is! It is an iteration of some code over and over again until it is stopped. The most
@@ -145,7 +166,7 @@
             What are constants?
         </h1>
     </div>
-    <div class="body accent">
+    <div class="body">
         <h3>
             Constants are variables that remain- well... constant! We typically put all of these variables in a
             different file to keep the code nice and squeaky clean. These variables never change!
@@ -158,7 +179,7 @@
             What is Camel Case?
         </h1>
     </div>
-    <div class="body">
+    <div class="body accent">
         <h3>
             Camel Case is a naming convention in which multiple words are joined together without spaces, and each
             word's first letter is capitalized except for the first word. Adam is a stickler for this! You can learn
@@ -184,6 +205,11 @@
         <button onclick="previousbutton()">Previous</button>
         <button onclick="nextbutton()">Next</button>
     </div>
+    <br>
+    <br>
+    <div class="body accent center" id="footer"></div>
 </body>
+
+<script src="./data/index.js"></script>
 
 </html>

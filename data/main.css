@@ -1,5 +1,12 @@
+:root {
+    --backgroundcolor: #14161A;
+    --grayaccent: #181B20;
+    --hr: #303131;
+}
+
 body {
     color: white;
+    background-color: var(--backgroundcolor);
 }
 
 .center {
@@ -22,12 +29,12 @@ button {
     font-size: 1.5rem;
     border: solid;
     border-width: 1px;
-    border-color: var(--bulma-footer-background-color);
+    border-color: var(--grayaccent);
 }
 
 button:hover {
     cursor: pointer;
-    background-color: var(--bulma-footer-background-color);
+    background-color: var(--grayaccent);
     color: white;
     border: solid;
     border-width: 1px;
@@ -38,6 +45,7 @@ button:hover {
     border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
+    background-color: var(--grayaccent);
 }
 
 a {
@@ -102,4 +110,8 @@ ul {
 
 input[type='radio'] {
     accent-color: hsl(221, 14%, 9%);
+}
+
+hr {
+    background-color: var(--hr);
 }

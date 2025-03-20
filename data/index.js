@@ -2,7 +2,7 @@ function loadFooter() {
     let footer = document.getElementById("footer");
     footer.innerHTML = `
         <h4>
-            <a href="../tutorials/portal.html">Portal</a> |
+            <a href="../tutorials/home.html">Home</a> |
             <a href="../tutorials/tutorial1.html">Tutorial 1</a> |
             <a href="../tutorials/tutorial2.html">Tutorial 2</a> |
             <a href="../tutorials/tutorial3.html">Tutorial 3</a> |
@@ -47,7 +47,7 @@ function previousbutton() {
     let data = document.getElementById("data").innerText;
     switch (true) {
         case data == "Page1":
-            document.location.href = "../tutorials/portal.html";
+            document.location.href = "../tutorials/home.html";
             break;
         case data == "Page2":
             document.location.href = '../tutorials/tutorial1.html';

@@ -11,6 +11,9 @@ function loadFooter() {
             <a href="../tutorials/aandb1.html">A&B 1</a> |
             <a href="../tutorials/aandb2.html">A&B 2</a>
         </h4>
+        <h4>
+            <a href="../data/sitemap.html">Sitemap</a>
+        </h4>
             `;
 }
 

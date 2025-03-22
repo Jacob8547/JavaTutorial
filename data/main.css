@@ -109,7 +109,7 @@ ul {
 }
 
 input[type='radio'] {
-    accent-color: hsl(221, 14%, 9%);
+   -color: hsl(221, 14%, 9%);
 }
 
 hr {

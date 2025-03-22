@@ -38,6 +38,8 @@ function nextbutton() {
         case data == "Page6":
             document.location.href = "../tutorials/aandb2.html";
             break;
+        case data == "install":
+            document.location.href = "../tutorials/tutorial2.html";
         default:
             break;
     }

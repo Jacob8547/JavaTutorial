@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThunderChickens Java Tutorial</title>
+    <link rel="stylesheet" href="../data/bulma.css">
+    <link rel="stylesheet" href="../data/main.css">
+</head>
+
+<body>
+    <div style="display: none;" id="data">fulljava</div>
+    <div class="center title">
+        <h1>Java Tutorial | Full Java Tutorial</h1>
+        <h2>Coding In Java</h2>
+    </div>
+    <hr>
+    <div class="body">
+        <h2>
+            Welcome to the ThunderChickens Full Java Tutorial.
+        </h2>
+    </div>
+    <div class="body">
+        <h2>
+            There's a lot to do, so let's get started!
+        </h2>
+    </div>
+    <br>
+    <br>
+    <div class="title center">
+        <h1>
+            Coding In Java
+        </h1>
+    </div>
+    <hr>
+    <div class="body">
+        <h3>
+            Java is a multiplatform, object-oriented programming language that runs on billions of devices worldwide. It
+            powers applications, smartphone operating systems, enterprise software, and many well-known programs.
+            Despite having been invented over 20 years ago, Java is currently the most popular programming language for
+            app developers.
+            <br>
+            <br>
+            To start coding in Java, all you need to do is to make a file. We will make a file named Hello.java. In that
+            file, we will create a class. In Java, your class must be the name of your file; otherwise, it won't work.
+            You must also provide a main function. Inside of that function, we will create a new int variable and print
+            it to the console.
+            <br>
+            <br>
+            <div style="font-size: smaller; padding-left: 15px; margin-left: 4%; color:tomato;">Hello.java
+            </div>
+            <div class="codebox">
+                public class Hello { }<br><br>
+                public static void main(String... args) {<br>
+                &emsp;int thisIsAnInt = 10;<br>
+                &emsp;System.out.println(thisIsAnInt);<br>
+                }<br>
+            </div>
+            <br>
+            "int" variables and "double" variables are very different from each other. Even though they both deal with
+            numbers, doubles carry a higher level of precision than ints. Ints can only deal with whole numbers, while
+            doubles can deal with decimals too.
+            <br>
+            <br>
+            Enums are another data type. Enum is a data type that assigns names to a set of named constants, making code
+            more readable and maintainable by using descriptive names instead of raw values. An example of an enum is
+            below:
+            <br>
+            <br>
+            <div class="codebox">
+                enum daysOfTheWeek {<br>
+                &emsp;Sunday,<br>
+                &emsp;Monday,<br>
+                &emsp;Tuesday,<br>
+                &emsp;Wednesday,<br>
+                &emsp;Thursday,<br>
+                &emsp;Friday,<br>
+                &emsp;Saturday<br>
+                }
+            </div>
+            <br>
+            Time for some if functions! There are many different ways of comparing two variables. For example, are two
+            variables equal, not equal, less than, greater than? Do the variables even exist? Some examples are below:
+            <br>
+            <br>
+            <div class="codebox">
+                if (10 == 5) { } <comment>// Equal To</comment><br>
+                if (10 != 5) { } <comment>// Not Equal To</comment><br>
+                if (10 > 5) { } <comment>// Greater Than</comment><br>
+                if (10 >= 5) { } <comment>// Greater Than Or Equal To</comment><br>
+                if (10 < 5) { } <comment>// Less Than</comment><br>
+                    if (10 <= 5) { } <comment>// Less Than Or Equal To</comment><br>
+            </div>
+            <br>
+            As you might have noticed, we use 2 equal signs for some comparisons and 1 for others. Normally, this is
+            what the equal signs mean:
+            <br>
+            <br>
+            <ul>
+                <li>1 equal sign (=) is the assignment operator. It's used to assign a value to a variable.</li>
+                <li>2 equal signs (==) is the equality operator. It is used to compare two values to check if they are
+                    equal.</li>
+            </ul>
+            <br>
+            But why only 1 equal sign for greater/less than or equal to (>=)? This is because combined operators like >=
+            are shortened to 2 characters. If it were written as >==, it would be confusing. This is the same for not
+            equal to.
+            <br>
+            <br>
+            A shorted way to write "not equal to" or "equal to" while commenting or documenting would be to use NEQ and
+            EQU respectively. This will save time while commenting during coding.
+            <br>
+            <br>
+            Now, let's try to run that code that we wrote earlier (Hello.java). Unlike other programming languages, Java
+            must be compiled before it is run. When you write Java code, you write it in human-readable form. However,
+            the computer doesn't understand Java directly. Java is a high-level programming language, and to execute
+            your program, it must be translated into machine code, which is specific to the hardware and operating
+            system. To compile it, we will use the "javac Hello.java" command. Once we have run that command, we can run
+            the "java Hello" command to finally run the program.
+        </h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="title center">
+        <h1>
+            How do I create variables?
+        </h1>
+    </div>
+    <hr>
+    <div class="body">
+        <h3>
+            Ah, sweet old Java. It's never simple... Anyway, there are a few "parameters" you can declare before you
+            create your variable.
+            <br>
+            <br>
+            <ul>
+                <li>public - Allows you to access the variable from any file (Learn more about this below)</li>
+                <li>private - A variable contained in one file alone</li>
+                <li>static - So that you don't need to instantiate the class to use the variable</li>
+                <li>final - Once the variable is declared, it cannot be changed</li>
+            </ul>
+        </h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="title center">
+        <h1>
+            What are classes?
+        </h1>
+    </div>
+    <hr>
+    <div class="body">
+        <h3>
+            Imagine your room. Now, take everything out of your room so that it is empty. This is what a class is. In a
+            class, you can create functions, variables, loops, really anything. You can have mutliple classes working
+            all together to do multiple different things. But how do we do that? You can code classes like this:
+            <br>
+            <br>
+            <div class="codebox">
+                public class Robot {<br>
+                &emsp;public double numberOfNuggets = 10.51;<br>
+                &emsp;private boolean matchesNumberOnBox = False; <comment>// Notice this is private</comment>
+                <br>
+                &emsp;public string messageToEmployee = "Get it together";<br>
+                }
+            </div>
+        </h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="title center">
+        <h1>
+            What are objects?
+        </h1>
+    </div>
+    <hr>
+    <div class="body">
+        <h3>
+            An object is an instance of a class. You can't just magically use everything in a class in other classes.
+            You must first create an object! Once you create the object, anything in the class is now accessible
+            through that object. You can code them like this:
+            <br>
+            <br>
+            <div class="codebox">
+                Robot robotObject = new Robot();<br>
+                robotObject.numberOfNuggets; <comment>// 10.51</comment><br>
+                robotObject.matchesNumberOnBox; <comment>// Error: Does not exist</comment><br>
+                robotObject.messageToEmployee; <comment>// "Get it together"</comment>
+            </div>
+        </h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="title center">
+        <h1>
+            What are loops?
+        </h1>
+    </div>
+    <hr>
+    <div class="body">
+        <h3>
+            The easiest way to understand what a loop is - do something over and over again until someone says to stop.
+            That is what a loop is! It is an iteration of some code over and over again until it is stopped. The most
+            common loop we use is the "for loop". Basically, some code is executed repeatedly a specific number of times
+            until a certain condition is met. Another common loop is the "while loop". To sum this one up, it runs while
+            "x" = "y"; Until "x" does not equal "y", this loop will run. Examples of both loops are below:
+            <br>
+            <br>
+            <div class="codebox">
+                <comment>// i++ means increase i by 1 each time.</comment><br>
+                for (int i = 0; i <= 10; i++) {<br>
+                    &emsp;System.out.println(i);<br>
+                    }<br>
+                    <br>
+                    <comment>// The code below results in an infinite loop.</comment><br>
+                    while (true == true) {<br>
+                    <br>
+                    }
+            </div>
+        </h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="title center">
+        <h1>
+            What are constants?
+        </h1>
+    </div>
+    <hr>
+    <div class="body">
+        <h3>
+            Constants are variables that remain- well... constant! We typically put all of these variables in a
+            different file to keep the code nice and squeaky clean. These variables never change!
+        </h3>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="title center">
+        <h1>
+            What is Camel Case?
+        </h1>
+    </div>
+    <hr>
+    <div class="body">
+        <h3>
+            Camel Case is a naming convention in which multiple words are joined together without spaces, and each
+            word's first letter is capitalized except for the first word. Adam is a stickler for this! You can learn
+            more about Camel Case <a
+                href="https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#camel-case">here</a>.
+            Here is an example of a Camel Case variable name:
+            <br>
+            <br>
+            <div class="codebox">
+                int camelCaseName = 1;<br>
+                string anotherCamelCaseName = "Each word after the first is capitalized!";
+            </div>
+        </h3>
+    </div>
+    <br>
+    <br>
+    <div class="body">
+        <h2>
+            And there ya' go! You are all set to start learning about Java practices! Proceed to the next tutorial to
+            learn about Java practices.
+        </h2>
+    </div>
+    <br>
+    <br>
+    <div class="footer body">
+        <button onclick="previousbutton()">Previous</button>
+        <button onclick="quizbutton()">Tutorial Quiz</button>
+        <button onclick="nextbutton()">Next</button>
+    </div>
+    <br>
+    <br>
+    <div class="body center" id="footer"></div>
+</body>
+
+<script src="../data/index.js"></script>
+
+</html>

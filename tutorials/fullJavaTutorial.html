@@ -118,6 +118,79 @@
             your program, it must be translated into machine code, which is specific to the hardware and operating
             system. To compile it, we will use the "javac Hello.java" command. Once we have run that command, we can run
             the "java Hello" command to finally run the program.
+            <br>
+            <br>
+            Here's where things get interesting. Java is also an inheritance based language. This means that you can
+            have multiple classes build off of a different single class. For example, you can have a class based on
+            making an animal. You can then use that same class in another class to make a dog. Here's a code example:
+            <br>
+            <br>
+            <div class="codebox">
+                public class Animal {<br>
+                &emsp;public void makeSound() {<br>
+                &emsp;&emsp;System.out.println("Some sound");<br>
+                &emsp;}<br>
+                }<br><br>
+
+                public class Dog extends Animal { <comment>// Notice the "extends" keyword here.</comment><br>
+                &emsp;@Override<br>
+                &emsp;public void makeSound() {<br>
+                &emsp;&emsp;System.out.println("Bark");<br>
+                &emsp;}<br>
+                }
+            </div>
+            <br>
+            Now, arrays and maps. Imagine arrays like a shopping list. There are many items that you can access. Maps
+            are like arrays, but different in the fact that there is a value assigned to each item. Now, each item on
+            that shopping list has a specific brand assigned to it. Here's a code example:
+            <br>
+            <br>
+            <div class="codebox">
+                <comment>// Array</comment><br>
+                List&lt;String&gt; list = new ArrayList&lt;&gt;();<br>
+                &emsp;list.add("Apple");<br>
+                &emsp;list.add("Banana");<br>
+                list.get(0); <comment>// Returns "Apple" because it is in the 0th index.</comment><br><br>
+
+                <comment>// Map</comment><br>
+                Map&lt;String, Integer&gt; ageMap = new HashMap&lt;&gt;();<br>
+                &emsp;ageMap.put("Alice", 25);<br>
+                &emsp;ageMap.put("Bob", 30);<br>
+                &emsp;ageMap.put("Charlie", 35);<br>
+                ageMap.get("Alice"); <comment>// Returns the integer "25".</comment>
+            </div>
+            <br>
+            Another loop other than the "for" or "while" loops is the "forEach" loop. An example is below:
+            <br>
+            <br>
+            <div class="codebox">
+                <comment>// This code will print every string in the list we created above.</comment><br>
+                for (String fruit : list) {<br>
+                &emsp;System.out.println(name);<br>
+                }<br>
+                <comment>// Returns "Apple, Banana". The comma represents a new line.</comment>
+            </div>
+            <br>
+            Instead of doing if-else statements over and over for the same condition, we can use a switch. An example is
+            below:
+            <br>
+            <br>
+            <div class="codebox">
+                switch (animal) {<br>
+                &emsp;case Dog:<br>
+                &emsp;&emsp;return "Woof";<br>
+                &emsp;&emsp;break; <comment>// "break" makes the switch end at the statement. It does not continue to
+                    check the other cases.</comment><br>
+                &emsp;case Cat:<br>
+                &emsp;&emsp;return "Meow";<br>
+                &emsp;&emsp;break;<br>
+                &emsp;default: <comment>// This is the statement that is run when none of the cases are true.</comment>
+                <br>
+                &emsp;&emsp;"No such animal exists."<br>
+                }
+            </div>
+            <br>
+            That's about it coding wise. Below will be some other helpful information.
         </h3>
     </div>
     <br>
@@ -126,162 +199,28 @@
     <br>
     <div class="title center">
         <h1>
-            How do I create variables?
+            Team Talk
         </h1>
     </div>
     <hr>
     <div class="body">
         <h3>
-            Ah, sweet old Java. It's never simple... Anyway, there are a few "parameters" you can declare before you
-            create your variable.
+            Let's talk about team talk! Below will be a few phrases you must know.
             <br>
             <br>
             <ul>
-                <li>public - Allows you to access the variable from any file (Learn more about this below)</li>
-                <li>private - A variable contained in one file alone</li>
-                <li>static - So that you don't need to instantiate the class to use the variable</li>
-                <li>final - Once the variable is declared, it cannot be changed</li>
+                <li>Auton - Autonomous (When the robot controls itself).</li>
+                <li>Teleop - Teleoporated (When we control the robot).</li>
+                <li>1 Piece Auton - Score once and stop.</li>
+                <li>2 Piece Auton - Score twice and stop.</li>
             </ul>
+            <br>
+            Checkpoint! No going back for you!
         </h3>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="title center">
-        <h1>
-            What are classes?
-        </h1>
-    </div>
-    <hr>
-    <div class="body">
-        <h3>
-            Imagine your room. Now, take everything out of your room so that it is empty. This is what a class is. In a
-            class, you can create functions, variables, loops, really anything. You can have mutliple classes working
-            all together to do multiple different things. But how do we do that? You can code classes like this:
-            <br>
-            <br>
-            <div class="codebox">
-                public class Robot {<br>
-                &emsp;public double numberOfNuggets = 10.51;<br>
-                &emsp;private boolean matchesNumberOnBox = False; <comment>// Notice this is private</comment>
-                <br>
-                &emsp;public string messageToEmployee = "Get it together";<br>
-                }
-            </div>
-        </h3>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="title center">
-        <h1>
-            What are objects?
-        </h1>
-    </div>
-    <hr>
-    <div class="body">
-        <h3>
-            An object is an instance of a class. You can't just magically use everything in a class in other classes.
-            You must first create an object! Once you create the object, anything in the class is now accessible
-            through that object. You can code them like this:
-            <br>
-            <br>
-            <div class="codebox">
-                Robot robotObject = new Robot();<br>
-                robotObject.numberOfNuggets; <comment>// 10.51</comment><br>
-                robotObject.matchesNumberOnBox; <comment>// Error: Does not exist</comment><br>
-                robotObject.messageToEmployee; <comment>// "Get it together"</comment>
-            </div>
-        </h3>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="title center">
-        <h1>
-            What are loops?
-        </h1>
-    </div>
-    <hr>
-    <div class="body">
-        <h3>
-            The easiest way to understand what a loop is - do something over and over again until someone says to stop.
-            That is what a loop is! It is an iteration of some code over and over again until it is stopped. The most
-            common loop we use is the "for loop". Basically, some code is executed repeatedly a specific number of times
-            until a certain condition is met. Another common loop is the "while loop". To sum this one up, it runs while
-            "x" = "y"; Until "x" does not equal "y", this loop will run. Examples of both loops are below:
-            <br>
-            <br>
-            <div class="codebox">
-                <comment>// i++ means increase i by 1 each time.</comment><br>
-                for (int i = 0; i <= 10; i++) {<br>
-                    &emsp;System.out.println(i);<br>
-                    }<br>
-                    <br>
-                    <comment>// The code below results in an infinite loop.</comment><br>
-                    while (true == true) {<br>
-                    <br>
-                    }
-            </div>
-        </h3>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="title center">
-        <h1>
-            What are constants?
-        </h1>
-    </div>
-    <hr>
-    <div class="body">
-        <h3>
-            Constants are variables that remain- well... constant! We typically put all of these variables in a
-            different file to keep the code nice and squeaky clean. These variables never change!
-        </h3>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="title center">
-        <h1>
-            What is Camel Case?
-        </h1>
-    </div>
-    <hr>
-    <div class="body">
-        <h3>
-            Camel Case is a naming convention in which multiple words are joined together without spaces, and each
-            word's first letter is capitalized except for the first word. Adam is a stickler for this! You can learn
-            more about Camel Case <a
-                href="https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#camel-case">here</a>.
-            Here is an example of a Camel Case variable name:
-            <br>
-            <br>
-            <div class="codebox">
-                int camelCaseName = 1;<br>
-                string anotherCamelCaseName = "Each word after the first is capitalized!";
-            </div>
-        </h3>
-    </div>
-    <br>
-    <br>
-    <div class="body">
-        <h2>
-            And there ya' go! You are all set to start learning about Java practices! Proceed to the next tutorial to
-            learn about Java practices.
-        </h2>
     </div>
     <br>
     <br>
     <div class="footer body">
-        <button onclick="previousbutton()">Previous</button>
-        <button onclick="quizbutton()">Tutorial Quiz</button>
         <button onclick="nextbutton()">Next</button>
     </div>
     <br>

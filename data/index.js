@@ -14,6 +14,9 @@ function loadFooter() {
         <h4>
             <a href="../data/sitemap.html">Sitemap</a>
         </h4>
+        <br>
+        <br>
+        <div style="font-size: x-small;">Made with ♡ by Jacob</div>
             `;
 }
 
@@ -36,13 +39,17 @@ function nextbutton() {
             document.location.href = "../tutorials/tutorial5.html";
             break;
         case data == "Page5":
-            document.location.href = "../tutorials/aandb1.html";
+            document.location.href = "../tutorials/fullJavaTutorial.html";
             break;
         case data == "Page6":
             document.location.href = "../tutorials/aandb2.html";
             break;
         case data == "install":
             document.location.href = "../tutorials/tutorial2.html";
+            break;
+        case data == "fulljava":
+            document.location.href = "../tutorials/aandb1.html";
+            break;
         default:
             break;
     }
@@ -67,7 +74,7 @@ function previousbutton() {
             document.location.href = '../tutorials/tutorial4.html';
             break;
         case data == "Page6":
-            document.location.href = '../tutorials/tutorial5.html';
+            document.location.href = '../tutorials/fullJavaTutorial.html';
             break;
         case data == "Page7":
             document.location.href = '../tutorials/aandb1.html';

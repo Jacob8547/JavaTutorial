@@ -2,17 +2,17 @@ function loadFooter() {
     let footer = document.getElementById("footer");
     footer.innerHTML = `
         <h4>
-            <a href="../tutorials/home.html">Home</a> |
-            <a href="../tutorials/tutorial1.html">Tutorial 1</a> |
-            <a href="../tutorials/tutorial2.html">Tutorial 2</a> |
-            <a href="../tutorials/tutorial3.html">Tutorial 3</a> |
-            <a href="../tutorials/tutorial4.html">Tutorial 4</a> |
-            <a href="../tutorials/tutorial5.html">Tutorial 5</a> |
-            <a href="../tutorials/aandb1.html">A&B 1</a> |
-            <a href="../tutorials/aandb2.html">A&B 2</a>
+            <a href="../tutorials/home">Home</a> |
+            <a href="../tutorials/tutorial1">Tutorial 1</a> |
+            <a href="../tutorials/tutorial2">Tutorial 2</a> |
+            <a href="../tutorials/tutorial3">Tutorial 3</a> |
+            <a href="../tutorials/tutorial4">Tutorial 4</a> |
+            <a href="../tutorials/tutorial5">Tutorial 5</a> |
+            <a href="../tutorials/aandb1">A&B 1</a> |
+            <a href="../tutorials/aandb2">A&B 2</a>
         </h4>
         <h4>
-            <a href="../data/sitemap.html">Sitemap</a>
+            <a href="../data/sitemap">Sitemap</a>
         </h4>
         <br>
         <br>
@@ -24,31 +24,31 @@ function nextbutton() {
     let data = document.getElementById("data").innerText;
     switch (true) {
         case data == "Page0":
-            document.location.href = "../tutorials/tutorial1.html";
+            document.location.href = "../tutorials/tutorial1";
             break;
         case data == "Page1":
-            document.location.href = "../tutorials/tutorial2.html";
+            document.location.href = "../tutorials/tutorial2";
             break;
         case data == "Page2":
-            document.location.href = "../tutorials/tutorial3.html";
+            document.location.href = "../tutorials/tutorial3";
             break;
         case data == "Page3":
-            document.location.href = "../tutorials/tutorial4.html";
+            document.location.href = "../tutorials/tutorial4";
             break;
         case data == "Page4":
-            document.location.href = "../tutorials/tutorial5.html";
+            document.location.href = "../tutorials/tutorial5";
             break;
         case data == "Page5":
-            document.location.href = "../tutorials/fullJavaTutorial.html";
+            document.location.href = "../tutorials/fullJavaTutorial";
             break;
         case data == "Page6":
-            document.location.href = "../tutorials/aandb2.html";
+            document.location.href = "../tutorials/aandb2";
             break;
         case data == "install":
-            document.location.href = "../tutorials/tutorial2.html";
+            document.location.href = "../tutorials/tutorial2";
             break;
         case data == "fulljava":
-            document.location.href = "../tutorials/aandb1.html";
+            document.location.href = "../tutorials/aandb1";
             break;
         default:
             break;
@@ -59,25 +59,25 @@ function previousbutton() {
     let data = document.getElementById("data").innerText;
     switch (true) {
         case data == "Page1":
-            document.location.href = "../tutorials/home.html";
+            document.location.href = "../tutorials/home";
             break;
         case data == "Page2":
-            document.location.href = '../tutorials/tutorial1.html';
+            document.location.href = '../tutorials/tutorial1';
             break;
         case data == "Page3":
-            document.location.href = '../tutorials/tutorial2.html';
+            document.location.href = '../tutorials/tutorial2';
             break;
         case data == "Page4":
-            document.location.href = '../tutorials/tutorial3.html';
+            document.location.href = '../tutorials/tutorial3';
             break;
         case data == "Page5":
-            document.location.href = '../tutorials/tutorial4.html';
+            document.location.href = '../tutorials/tutorial4';
             break;
         case data == "Page6":
-            document.location.href = '../tutorials/fullJavaTutorial.html';
+            document.location.href = '../tutorials/fullJavaTutorial';
             break;
         case data == "Page7":
-            document.location.href = '../tutorials/aandb1.html';
+            document.location.href = '../tutorials/aandb1';
             break;
         default:
             break;
@@ -88,16 +88,16 @@ function quizbutton() {
     let data = document.getElementById("data").innerText;
     switch (true) {
         case data == "Page1":
-            document.location.href = "../quizzes/quiz1.html";
+            document.location.href = "../quizzes/quiz1";
             break;
         case data == "Page2":
-            document.location.href = "../quizzes/quiz2.html";
+            document.location.href = "../quizzes/quiz2";
             break;
         case data == "Page4":
-            document.location.href = "../quizzes/quiz4.html";
+            document.location.href = "../quizzes/quiz4";
             break;
         case data == "Page5":
-            document.location.href = "../quizzes/quiz5.html";
+            document.location.href = "../quizzes/quiz5";
             break;
         default:
             break;
